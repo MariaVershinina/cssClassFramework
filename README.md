@@ -14,6 +14,12 @@ cssClass - js-фреймворк для работы с CSS классами DOM
 _false_ - если проверяем наличие класса хотя бы в одном элементе.</br>
 _true_ - если проверяем наличие класса во всех элементах.</br>
 
+## Установка
+
+Добавьте `cssClass.js` к проекту:
+
+```<script src="cssClass.js" type="text/javascript"></script>```
+
 ## Пример использования:
 ```html
 if (document.getElementById('3').hasClass('circle coral'))
