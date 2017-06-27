@@ -1,0 +1,24 @@
+ div {
+   width:80px; 
+   height:80px; 
+   margin:10px; 
+   float:left;        
+   background-color: goldenrod;       
+   border:3px solid grey;     
+}
+a{
+    display: block;
+    font-size: 1em;
+}
+.square{
+     border-radius:5px;
+}
+.circle{
+    border-radius:50px;
+}
+.coral{
+    background-color: coral;  
+}
+
+
+       

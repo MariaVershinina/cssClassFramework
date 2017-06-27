@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>cssClass</title>
+  	<link type="text/css" rel="stylesheet" href="style.css">
+	<script src="cssClass.js" type="text/javascript"></script>
+</head>
+<body>
+		<div id="1" class="square odd"></div>
+		<div id="2" class="circle"></div>
+		<div id="3" class="circle coral odd"></div>
+		<div id="4" class="square"></div>
+		<div id="5" class="circle odd"></div>
+		<div id="6" class="square"></div>
+
+		
+		<a href="#" id="Link1">Первый элемент - красный</a>
+		<a href="#" id="Link2">Первый элемент - золотой</a>
+		<a href="#" id="Link3">Изменить форму всех  элементов</a>
+		<a href="#" id="Link4">Изменить форму нечетных элементов</a>
+		<a href="#" id="Link5">Изменить цвет квадратов</a>
+		<a href="#" id="Link6">Если 3 элемент красный круг, заменить его на квадрат</a>
+	
+<script>
+
+var Link1 = document.getElementById('Link1');
+Link1.onclick = function(){
+   	document.getElementById('1').addClass('coral');
+};
+
+var Link2 = document.getElementById('Link2');
+Link2.onclick = function(){
+   	document.getElementById('1').removeClass('coral');
+};
+
+var Link3 = document.getElementById('Link3');
+Link3.onclick = function(){
+   	document.getElementsByTagName('div').toggleClass('square circle');
+};
+
+var Link4 = document.getElementById('Link4');
+Link4.onclick = function(){
+   	document.getElementsByClassName('odd').toggleClass('square circle');
+};
+
+var Link5 = document.getElementById('Link5');
+Link5.onclick = function(){
+   	document.getElementsByClassName('square').toggleClass('coral');
+};
+
+var Link6 = document.getElementById('Link6');
+Link6.onclick = function(){
+	if (document.getElementById('3').hasClass('circle coral'))
+	document.getElementById('3').removeClass('circle').addClass('square');
+};
+
+</script>
+
+</body>
+</html>
