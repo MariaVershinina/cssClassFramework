@@ -130,7 +130,9 @@
 		};
 		return this;
 	};
-
+	/*
+	методы HTMLCollection.prototype
+	*/
 	HTMLCollection.prototype.hasClass = HTMLCollection.prototype.hasClass || function (classArr, data) {
 
 		if( this == null || !classArr) 
